@@ -276,30 +276,7 @@
   }
   .service-features li::before { content: '→'; color: var(--accent2); font-size: 0.8rem; }
 
-  /* PORTFOLIO */
-  .portfolio { background: var(--black); }
-  .portfolio-header { margin-bottom: 3rem; }
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-  }
-  .portfolio-card {
-    border-radius: 16px;
-    overflow: hidden;
-    background: var(--gray);
-    border: 1px solid rgba(255,255,255,0.06);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-  }
-  .portfolio-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
-  .portfolio-preview {
-    height: 200px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 3rem;
-    position: relative;
-    overflow: hidden;
-  }
+  
   .preview-1 { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); }
   .preview-2 { background: linear-gradient(135deg, #0a1628, #1a3a2a, #0d2b1f); }
   .preview-3 { background: linear-gradient(135deg, #1a0a0a, #2d1515, #3d1010); }
@@ -309,25 +286,6 @@
     font-weight: 700;
     margin-bottom: 0.5rem;
   }
-  .portfolio-info p { font-size: 0.85rem; color: var(--muted); }
-  .portfolio-tags { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
-  .tag {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.75rem;
-    border-radius: 100px;
-    background: rgba(255,255,255,0.07);
-    color: var(--muted);
-  }
-  .portfolio-note {
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.85rem;
-    margin-top: 2rem;
-    padding: 1rem;
-    border: 1px dashed rgba(255,255,255,0.1);
-    border-radius: 8px;
-  }
-  .portfolio-note strong { color: var(--accent); }
 
   /* ABOUT */
   .about {
@@ -607,7 +565,7 @@
     <h1>
       We Build <span class="highlight">Websites</span><br>
       & <em>WhatsApp</em><br>
-      <span class="highlight">Bots</span> That Work.
+      <span class="highlight"> Personalised Assistant Bots</span> That Work.
     </h1>
     <p class="hero-sub">Professional digital solutions for businesses across Zimbabwe and beyond. Fast delivery, real results, no fluff.</p>
     <div class="hero-actions">
@@ -615,12 +573,10 @@
     </div>
     <div class="hero-stats">
       <div>
-        <div class="stat-num">48h</div>
-        <div class="stat-label">Avg Delivery</div>
+
       </div>
       <div>
-        <div class="stat-num">$150</div>
-        <div class="stat-label">Starting Price</div>
+    
       </div>
       <div>
        
@@ -641,7 +597,7 @@
       <div class="service-icon icon-yellow">🌐</div>
       <h3>Basic Website</h3>
       <p>A clean, fast, mobile-friendly website for your business. Perfect for startups and small businesses who need an online presence fast.</p>
-      <div class="service-price">$150 <span>– $300</span></div>
+      <div class="service-price">$70 <span>– $120</span></div>
       <ul class="service-features">
         <li>Up to 5 pages</li>
         <li>Mobile responsive design</li>
@@ -654,7 +610,7 @@
       <div class="service-icon icon-green">⚡</div>
       <h3>Premium Website</h3>
       <p>A fully custom, polished website with advanced design, SEO optimization, and content management so you can update it yourself.</p>
-      <div class="service-price">$300 <span>– $600</span></div>
+      <div class="service-price">$120 <span>– $250</span></div>
       <ul class="service-features">
         <li>Up to 10 pages</li>
         <li>WordPress + Elementor</li>
@@ -665,14 +621,13 @@
     </div>
     <div class="service-card">
       <div class="service-icon icon-green">💬</div>
-      <h3>WhatsApp Bot</h3>
+      <h3>WhatsApp Assistant Bots</h3>
       <p>Automate your customer replies, send menus, take orders, and qualify leads — 24/7 without lifting a finger.</p>
-      <div class="service-price">$80 <span>– $200 setup</span></div>
+      <div class="service-price">$80 <span>– $129 setup</span></div>
       <ul class="service-features">
         <li>Auto-reply & menu system</li>
         <li>Lead capture</li>
         <li>Order/booking flow</li>
-        <li>$20/month maintenance</li>
         <li>Delivered in 2–3 days</li>
       </ul>
     </div>
@@ -680,7 +635,7 @@
       <div class="service-icon icon-yellow">🚀</div>
       <h3>Website + Bot Bundle</h3>
       <p>The complete package — a professional website AND a WhatsApp bot working together. Best value for businesses serious about growth.</p>
-      <div class="service-price">$350 <span>– $600</span></div>
+      <div class="service-price">$125 <span>– $250</span></div>
       <ul class="service-features">
         <li>Premium website included</li>
         <li>WhatsApp bot included</li>
@@ -700,7 +655,7 @@
     <div class="about-card">
       <div class="about-avatar">GT</div>
       <h3>GunaTech</h3>
-      <div class="role">Web Developer & Bot Specialist · Masvingo, ZW</div>
+      <div class="role">Software , Web Developer & Bot Specialist  · Masvingo, ZW</div>
       <p>A Zimbabwean tech business helping local and international businesses grow their digital presence with modern websites and smart automation.</p>
       <div class="skill-bars">
         <div class="skill-bar">
@@ -831,7 +786,7 @@
   <p>© 2026 GunaTech · Masvingo, Zimbabwe</p>
   <div class="footer-links">
     <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </div>
 </footer>
